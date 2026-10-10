@@ -1,0 +1,8 @@
+AsahiOpenHarmony
+Copyright (c) 2024-2026 AsahiOpenHarmony contributors
+
+本项目基于 / based on:
+  - OpenHarmony (https://gitee.com/openharmony) — Apache License 2.0
+  - Asahi Linux — 提供 Apple Silicon 的内核与驱动栈基础。
+
+许可：Apache License 2.0，全文见 LICENSE。部分文件来自 OpenHarmony，保留其原始版权头。

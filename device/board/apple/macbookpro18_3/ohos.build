@@ -1,0 +1,13 @@
+{
+    "subsystem": "device_macbookpro18_3",
+    "parts": {
+        "device_macbookpro18_3": {
+            "module_list": [
+                "//device/board/apple/${device_name}:macbookpro18_3_group",
+                "//third_party/mesa3d/ohos:mesa3d_all_libs"
+            ],
+            "test_list": [],
+            "inner_kits": []
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "parts": {
+    "product_macbookpro18_3": {
+      "module_list": [
+        "//vendor/apple/macbookpro18_3/default_app_config:default_app_config",
+        "//vendor/apple/macbookpro18_3/image_conf:custom_image_conf",
+        "//vendor/apple/macbookpro18_3/preinstall-config:preinstall-config",
+        "//vendor/apple/macbookpro18_3/resourceschedule:resourceschedule",
+        "//vendor/apple/macbookpro18_3/etc:product_etc_conf",
+        "//vendor/apple/macbookpro18_3/hdf_config/uhdf:hdf_config",
+        "//vendor/apple/macbookpro18_3/window_config:window_config"
+      ]
+    }
+  },
+  "subsystem": "product_macbookpro18_3"
+}

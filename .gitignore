@@ -1,0 +1,5 @@
+# 构建产物 / 二进制
+*.o *.a *.so *.img *.bin *.raw *.bmp *.hcb
+build/ out/ .cache/
+# 任何设备/环境私有信息
+*.log

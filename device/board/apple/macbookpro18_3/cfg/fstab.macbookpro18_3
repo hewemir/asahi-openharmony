@@ -1,0 +1,7 @@
+# fstab file.
+#<src>                                                  <mnt_point> <type>    <mnt_flags and options>                              <fs_mgr_flags>
+/dev/block/platform/soc/393cc0000.nvme/by-name/system           /usr       ext4     ro,barrier=1  wait,required
+/dev/block/platform/soc/393cc0000.nvme/by-name/vendor           /vendor        ext4     ro,barrier=1  wait,required
+/dev/block/platform/soc/393cc0000.nvme/by-name/sys_prod              /sys_prod        ext4     ro,barrier=1  wait,required
+/dev/block/platform/soc/393cc0000.nvme/by-name/chip_prod              /chip_prod        ext4     ro,barrier=1  wait,required
+/dev/block/platform/soc/393cc0000.nvme/by-name/userdata               /data       ext4       noatime,nosuid,nodev  wait,required

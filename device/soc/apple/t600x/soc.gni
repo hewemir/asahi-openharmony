@@ -1,0 +1,9 @@
+# Apple Silicon SoC package (T600x: M1 Pro/Max/Ultra) for OpenHarmony.
+# Base platform comes from Asahi Linux (kernel + drivers); this package wires the
+# OpenHarmony HAL/HDI on top of those drivers.
+
+# Display HAL lives under this SoC package (Apple: DRM/DCP backed).
+display_device_hal = "soc/apple/t600x/hardware"
+
+# USB default config path (adjust/extend when Apple USB-C bringup is wired).
+usb_default_config_path = "//device/soc/apple/t600x/hardware/usb/include"

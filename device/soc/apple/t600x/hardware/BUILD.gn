@@ -1,0 +1,7 @@
+# Apple T600x (M1 Pro/Max/Ultra) SoC hardware HAL.
+# Display goes through the OpenHarmony DRM-backed VDI (Asahi provides the DRM/DCP).
+import("//build/ohos.gni")
+
+group("hardware_group") {
+  deps = []
+}

@@ -1,0 +1,26 @@
+# Apple Silicon (macbookpro18_3 / T600x) board package.
+# Base platform: Asahi Linux (kernel + drivers). This wires OpenHarmony HAL/HDI
+# and the board's init/kernel configs.
+
+import("//build/ohos.gni")
+import("device.gni")
+
+print("macbookpro18_3_group in")
+group("macbookpro18_3_group") {
+  deps = [
+    "cfg:init_configs",
+    "kernel:kernel",
+    "//device/soc/apple/${soc_name}/hardware:hardware_group",
+  ]
+  # NOTE: 板级 display HAL（DRM/DCP 后端）。RGA 依赖已摘除（Apple 无 RGA）。
+  if (is_support_graphic) {
+    deps += [
+      "//device/soc/apple/${soc_name}/hardware/display:display_buffer_model",
+      "//device/soc/apple/${soc_name}/hardware/display:display_composer_model",
+    ]
+  }
+
+  if (is_support_boot_animation) {
+    deps += [ "bootanimation:bootanimation" ]
+  }
+}
