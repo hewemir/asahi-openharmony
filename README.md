@@ -19,6 +19,8 @@ M1 的硬件页大小是 **16KB**。AGX GPU 的 UAT 页表按 16KB 组织，DART
 
 ## 其它要攻的点
 
+**仅供参考**
+
 - **内核**：asahi 6.8.8，带 Apple DRM/AGX 驱动，16K 页。
 - **显示/GPU**：Apple 侧没有现成 HD/HDI，需要自己补 vendor 侧的 display composer、gfx 桩，并把 DCP 拉起来。
 - **构建工具链**：自建 OpenHarmony 5.0.3（产品名 `macbookpro18_3`），用 OHOS clang 15 / GN / Ninja。系统里的 Python 版本较新，`build_utils.py` 里的 `pipes` 之类的旧模块要去掉、`ninja` 的重复 target 要用 `-w dupbuild=warn` 绕过。
